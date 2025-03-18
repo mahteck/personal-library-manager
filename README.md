@@ -1,46 +1,51 @@
-# Advanced Unit Converter
+# Personal Library Manager
 
-## 🚀 Introduction
-The **Advanced Unit Converter** is a powerful and user-friendly Streamlit application that allows users to quickly convert units across different measurement categories. This tool is designed for accuracy, ease of use, and an enhanced user experience.
+## Overview
+The **Personal Library Manager** is a Streamlit-based web application that allows users to manage their book collection. Users can add, remove, search, and view book details, along with statistics about their library. The application also supports file handling, allowing users to save and load their library from a file.
 
-## 🛠 Features
-- **📏 Length Converter**: Convert between kilometers, meters, miles, inches, and more.
-- **⚖️ Weight Converter**: Convert kilograms, grams, pounds, and ounces.
-- **🌡️ Temperature Converter**: Convert between Celsius, Fahrenheit, and Kelvin.
-- **💧 Liquid Converter**: Convert liters, milliliters, gallons, pints, and more.
-- **⏳ Time Converter**: Convert between seconds, minutes, hours, days, and years.
-- **📐 Area Converter**: Convert between square meters, square kilometers, acres, and more.
-- **User-Friendly Interface**: Intuitive design with a sidebar for easy selection.
-- **Responsive Layout**: Improved UI for better accessibility and usability.
+## Features
+- **Add a Book**: Users can add books with details including title, author, publication year, genre, and read status.
+- **Remove a Book**: Users can remove books by selecting from a list.
+- **Search for a Book**: Search books by title or author.
+- **Display All Books**: View all books in a formatted list.
+- **Display Statistics**: View total books and percentage read.
+- **Save Library**: Library data is saved to a `library.txt` file and loaded upon app start.
 
-## 🔧 Installation
-To use this unit converter, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone https://github.com/mahteck/unit_conversion
-   cd unit-converter
-   ```
-2. **Install Dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. **Run the Application**:
-   ```bash
-   python -m streamlit run app.py
-   ```
-
-## 📌 Requirements
-Ensure you have the following installed:
-- Python 3.11.9
+## Technologies Used
+- Python
 - Streamlit
-- Google Generative AI SDK (optional for future enhancements)
+- JSON (for file handling)
 
-## 📷 Screenshot
-![Unit Converter UI](https://github.com/mahteck/unit_conversion/blob/main/ScreenShot.png)
+## Installation and Setup
+### Prerequisites
+Ensure you have Python installed. If not, download and install it from [python.org](https://www.python.org/downloads/).
 
-## 🤝 Contributing
-Feel free to contribute! Fork the repository, make changes, and submit a pull request.
+### Steps
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/mahteck/personal-library-manager
+   cd personal-library-manager
+   ```
+2. Install dependencies:
+   ```sh
+   pip install streamlit
+   ```
+3. Run the application:
+   ```sh
+   streamlit run library_manager.py
+   ```
 
-## ✨ Developed By
-[Shoaib Munir](https://github.com/mahteck)
+## File Handling
+- **library.txt**: Stores book data in JSON format.
+- The app loads the library data from this file when started and saves updates when exiting.
+
+## Usage
+1. Run the app and use the left sidebar to navigate.
+2. Add, remove, search, or display books.
+3. Save the library to persist data.
+
+## Developer
+**Developed by Shoaib**
+
+## GitHub Repository
+[GitHub Repository Link](https://github.com/mahteck/personal-library-manager)
