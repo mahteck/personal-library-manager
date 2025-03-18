@@ -1,0 +1,16 @@
+[
+    {
+        "title": "html",
+        "author": "tom",
+        "year": 1999,
+        "genre": "all",
+        "read": false
+    },
+    {
+        "title": "css",
+        "author": "tom and lit",
+        "year": 2000,
+        "genre": "all",
+        "read": true
+    }
+]
